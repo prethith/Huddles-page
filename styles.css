@@ -151,6 +151,8 @@ body {
     align-items: center;
     justify-content: space-around;
     font-family: Poppins;
+    max-width: 90%;
+    margin: auto;
 
 }
 
@@ -172,10 +174,9 @@ body {
     order:1;
 }
 
-
 .card-text h2 {
     color: hsl(192, 100%, 9%);
-    font-size: 2.7rem;
+    font-size: 2rem;
     margin-bottom: 5%;
 }
 
@@ -184,9 +185,83 @@ body {
     font-family: 'Open Sans', sans-serif;
     opacity: 100%;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.1em;
     text-align: left;
 }
+
+
+
+/* Footer */
+footer {
+    font-size: 1.2em;
+    color:#f4f4f4;
+    background-color:hsl(192, 100%, 9%);
+    padding-top:1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#logo-footer {
+    filter: grayscale(100%) invert(100%);
+    width: 9.4em;
+}
+.grid-container {
+    display:grid;
+    padding-top:3%;
+    padding-bottom: 3%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width:100%;
+    grid-template-columns:60% 20% 20%;
+    column-gap: 30px;
+}
+
+.contact-info {
+    list-style-type: none;
+    line-height: 1.9;
+}
+
+
+#address {
+    list-style-image: url('./images/icon-location.svg');
+}
+
+#phno {
+    list-style-image: url('./images/icon-phone.svg');
+}
+
+#email {
+    list-style-image: url('./images/icon-email.svg');
+}
+.grid-container > ul {
+    list-style-type: none;
+    line-height: 1.9;
+    display: block;
+}
+
+.footer-list > li > a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.footer-list > li > a:hover {
+    color:#6a6a6a;
+}
+.contact-info > li {
+    padding-left: 10px;
+}
+
+#logo {
+    width: 30%;
+}
+
+
+
 
 
 /* Media queries */
@@ -203,11 +278,11 @@ body {
     }
 
     .card-text h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .card-text p {
-        font-size: 0.9em;
+        font-size: 0.87em;
     }
 }
 
@@ -298,9 +373,13 @@ body {
     }
 
 
+    .features {
+        row-gap: 2px;
+    }
+
     .card {
         flex-direction: column;
-        padding: 25px 0;
+        padding: 20px 0;
     }
 
     .card-image.one {
@@ -312,7 +391,7 @@ body {
     }
     
     .card-text h2 {
-        font-size: 1.5em;
+        font-size: 1.6em;
         text-align: center;
     }
 
@@ -327,5 +406,25 @@ body {
     .card-text p {
         font-size: 0.95em;
         text-align: center;
+    }
+
+
+    footer {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    /* Footer responsive */
+    .grid-container {
+        width: 80%;
+        padding: 3rem 2rem;
+        margin-right: 0;
+        display: grid;
+        grid-template-rows: 1fr repeat(2, 100px);
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+
+    .column.about-us > p {
+        text-align: left;
     }
 }
