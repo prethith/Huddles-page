@@ -19,4 +19,4 @@ Huddles Page is a static webpage created using HTML, CSS, and JavaScript as a fr
 - Pop!\_OS (Ubuntu distribution [based on Linux], my personal OS)
 - Zathura (for viewing pdfs)
 - Tabbed (PWMT program for adding tabs feature to software)
-
+- FontAwesome (for icons)
